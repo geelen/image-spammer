@@ -1,10 +1,10 @@
 require 'uri'
 
-10.times do
+100.times do
   rando = `curl -sI https://source.unsplash.com/random`
   lines = rando.split("\n").map(&:strip)
   line = lines.find { |l| l =~ /^Location:/ }
-  _, url, search = line.split(/[ ?]/)
+  _, url = line.split(/ /)
 
   puts url
   path = URI(url).path
