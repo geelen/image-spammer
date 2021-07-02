@@ -1,3 +1,5 @@
+require 'uri'
+
 10.times do
   rando = `curl -sI https://source.unsplash.com/random`
   lines = rando.split("\n").map(&:strip)
