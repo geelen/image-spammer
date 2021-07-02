@@ -1,0 +1,21 @@
+{
+  "name": "image-spammer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "mkdir -p dist && ruby download.rb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geelen/image-spammer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geelen/image-spammer/issues"
+  },
+  "homepage": "https://github.com/geelen/image-spammer#readme"
+}
