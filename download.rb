@@ -8,8 +8,9 @@ require 'uri'
 
   puts url
   path = URI(url).path
+  file = File.basename(path)
 
-  `curl "#{url}" -o dist#{path}.jpg`
+  `curl "#{url}" -o dist/#{file}.jpg`
 end
 
 files = `ls dist`.split("\n")
