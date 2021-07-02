@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "rm -rf dist",
+    "prebuild": "rm -rf dist/*",
     "build": "mkdir -p dist && ruby download.rb"
   },
   "repository": {
